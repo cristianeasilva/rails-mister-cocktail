@@ -7,5 +7,5 @@ result = JSON.parse(open('http://www.thecocktaildb.com/api/json/v1/1/list.php?i=
 drinks = result['drinks']
 #puts drinks
 drinks.each do |hash|
-  Ingredient.create(name: hash["strIngredient1"])
+  Ingredient.create!(name: hash["strIngredient1"])
 end

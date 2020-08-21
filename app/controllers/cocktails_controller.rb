@@ -1,5 +1,9 @@
 class CocktailsController < ApplicationController
 
+  def new
+    @cocktail = Cocktail.new
+  end
+
   def index
     @cocktails = Cocktail.all
   end
@@ -8,7 +12,5 @@ class CocktailsController < ApplicationController
     @dose = Dose.new
   end
 
-  def new
-    @cocktail = Cocktail.new
-  end
+
 end
