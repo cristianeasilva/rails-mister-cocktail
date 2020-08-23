@@ -1,4 +1,7 @@
-<%= simple_form_for @cocktail do |f| %>
-  <%= f.input :name %>
-  <%= f.button :submit %>
-<% end %>
+<div class="container" m-t 3px m-b 5px>
+  <%= simple_form_for @cocktail do |f| %>
+    <%= f.input :name %>
+    <%= f.button :submit %>
+  <% end %>
+  <%= link_to "Back to Home", cocktails_path, class: "btn btn-primary pad20" %>
+</div>
